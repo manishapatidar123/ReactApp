@@ -1,0 +1,24 @@
+.marquee-container {
+    width: 100%; /* Set to the width you desire */
+ 
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 30s linear infinite; /* Adjust the duration as needed */
+}
